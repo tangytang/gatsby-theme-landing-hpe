@@ -22,7 +22,7 @@ export default function LandingPage(props) {
 
 export const query = graphql`
   query ($id: String!) {
-    page: contentfulLandingPage(id: { eq: $id }) {
+    page: contentfulAcesLandingPage(id: { eq: $id }) {
       title
       description
       image {
