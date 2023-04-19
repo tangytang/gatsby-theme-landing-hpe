@@ -13,7 +13,7 @@ export default function LandingPage(props) {
       <Page>
         {sections.map((section) => {
           const Component = Components[section.component] || DevDebug;
-          return Component ? <Component key={section.id} {...section} /> : null;
+          return Component ? <Component id={section.name} key={section.id} {...section} /> : null;
         })}
       </Page>
     </Layout>
@@ -32,6 +32,7 @@ export const query = graphql`
       }
       sections {
         id
+        name
         component
         heading
         secondaryHeading

@@ -5,9 +5,9 @@ import Button from "../components/button";
 import Section from "../components/section";
 import Heading from "../components/heading";
 
-export default function CallToAction({ heading, secondaryHeading, content }) {
+export default function CallToAction({ heading, secondaryHeading, content, name }) {
   return (
-    <Section className={styles.root}>
+    <Section id={name} className={styles.root}>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}

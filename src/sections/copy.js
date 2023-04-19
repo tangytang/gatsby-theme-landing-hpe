@@ -6,9 +6,9 @@ import Section from "../components/section";
 import Heading from "../components/heading";
 import Container from "../components/container";
 
-export default function Copy({ heading, secondaryHeading, content }) {
+export default function Copy({ heading, secondaryHeading, content, name }) {
   return (
-    <Section>
+    <Section id={name}>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}

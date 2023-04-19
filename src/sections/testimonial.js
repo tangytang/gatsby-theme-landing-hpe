@@ -5,9 +5,9 @@ import Heading from "../components/heading";
 import MarkdownText, { getText } from "../components/markdown-text";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function Testimonial({ heading, secondaryHeading, content }) {
+export default function Testimonial({ heading, secondaryHeading, content, name }) {
   return (
-    <Section>
+    <Section id={name}>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}

@@ -7,9 +7,9 @@ import LinkContainer from "../components/link-container";
 import Section from "../components/section";
 import Heading from "../components/heading";
 
-export default function Features({ heading, secondaryHeading, content }) {
+export default function Features({ heading, secondaryHeading, content, name }) {
   return (
-    <Section>
+    <Section id={name}>
       <Heading center>{heading}</Heading>
       <Heading secondary center>
         {secondaryHeading}

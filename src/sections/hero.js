@@ -6,12 +6,12 @@ import Button from "../components/button";
 import MarkdownText from "../components/markdown-text";
 import Heading from "../components/heading";
 
-export default function Hero({ heading, secondaryHeading, content }) {
+export default function Hero({ heading, secondaryHeading, content, name }) {
   const heroContent = content?.[0];
   const image = getImage(heroContent?.image);
 
   return (
-    <Section>
+    <Section id={name}>
       <div className={styles.root}>
         <div className={styles.content}>
           <Heading as="h2" className={styles.secondaryHeading}>
